@@ -26,7 +26,6 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { apiFetch, AuthUser, getAuthUser } from "@/lib/api";
-import DesignPreviewModal from "@/components/DesignPreviewModal";
 
 interface ApiBarang {
   id: number;
@@ -726,7 +725,6 @@ export default function AjukanPeminjamanPage() {
       )}
 
       {/* Floating Design Preview Button */}
-      <DesignPreviewModal currentDesignName="guru-ajukan" />
     </div>
   );
 }

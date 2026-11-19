@@ -26,7 +26,6 @@ import {
   FileCheck,
 } from "lucide-react";
 import { apiFetch } from "@/lib/api";
-import DesignPreviewModal from "@/components/DesignPreviewModal";
 
 interface ApiPeminjaman {
   id: number;
@@ -746,7 +745,6 @@ export default function PeminjamanSirkulasiPage() {
       </div>
 
       {/* Floating Design Preview Button */}
-      <DesignPreviewModal currentDesignName="admin-peminjaman" />
     </div>
   );
 }

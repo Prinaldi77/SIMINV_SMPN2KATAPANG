@@ -14,7 +14,6 @@ import {
   ArrowUp,
 } from "lucide-react";
 import { apiFetch } from "@/lib/api";
-import DesignPreviewModal from "@/components/DesignPreviewModal";
 
 const SEKOLAH = {
   government: "PEMERINTAH KABUPATEN BANDUNG",
@@ -465,7 +464,6 @@ export default function SuratBuktiPeminjamanPage() {
       </div>
 
       {/* Floating Design Preview Button */}
-      <DesignPreviewModal currentDesignName="guru-surat" />
     </div>
   );
 }

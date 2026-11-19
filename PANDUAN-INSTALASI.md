@@ -114,14 +114,15 @@ php artisan migrate --seed
 
 ## 5. Setup Frontend (Next.js 15)
 
-Kembali ke folder utama project (keluar dari `backend`):
+Kembali ke folder utama project, lalu masuk ke folder `frontend`:
 
 ```powershell
 cd ..
+cd frontend
 npm install
 ```
 
-Buat file baru bernama `.env.local` di folder utama project (sejajar dengan `package.json`), lalu isi dengan:
+Buat file baru bernama `.env.local` di dalam folder `frontend` (sejajar dengan `package.json`), lalu isi dengan:
 
 ```env
 NEXT_PUBLIC_API_URL=http://127.0.0.1:8000/api
@@ -131,7 +132,7 @@ NEXT_PUBLIC_API_URL=http://127.0.0.1:8000/api
 
 ## 6. Cara Menjalankan Aplikasi
 
-Setiap kali ingin menggunakan aplikasi, buka **2 terminal**:
+Setiap kali ingin menggunakan aplikasi, buka **2 terminal** dari folder utama project:
 
 - **Terminal 1 (Backend Laravel):**
   ```powershell
@@ -142,6 +143,7 @@ Setiap kali ingin menggunakan aplikasi, buka **2 terminal**:
 
 - **Terminal 2 (Frontend Next.js):**
   ```powershell
+  cd frontend
   npm run dev
   ```
   Aplikasi web akan berjalan di `http://localhost:3000`.

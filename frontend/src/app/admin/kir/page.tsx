@@ -12,7 +12,6 @@ import {
   FileCheck2,
 } from "lucide-react";
 import { apiFetch } from "@/lib/api";
-import DesignPreviewModal from "@/components/DesignPreviewModal";
 
 interface RuanganSummary {
   id: number;
@@ -519,7 +518,6 @@ export default function KartuInventarisRuanganPage() {
       </div>
 
       {/* Floating Design Preview Button */}
-      <DesignPreviewModal currentDesignName="admin-kir" />
     </div>
   );
 }

@@ -22,7 +22,6 @@ import {
   Radio,
 } from "lucide-react";
 import { apiFetch, AuthUser, getAuthUser } from "@/lib/api";
-import DesignPreviewModal from "@/components/DesignPreviewModal";
 
 interface GuruStats {
   total_barang_tersedia: number;
@@ -678,7 +677,6 @@ export default function GuruDashboardPage() {
       </div>
 
       {/* Floating Design Preview Button */}
-      <DesignPreviewModal currentDesignName="guru-dashboard" />
     </div>
   );
 }

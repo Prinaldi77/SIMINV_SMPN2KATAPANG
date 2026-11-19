@@ -26,7 +26,6 @@ import {
   FileSpreadsheet,
 } from "lucide-react";
 import { apiFetch, getAuthUser } from "@/lib/api";
-import DesignPreviewModal from "@/components/DesignPreviewModal";
 import BarcodeScannerModal from "@/components/BarcodeScannerModal";
 
 interface DashboardStats {
@@ -875,7 +874,6 @@ export default function AdminDashboardPage() {
       )}
 
       {/* Floating Design Preview Button */}
-      <DesignPreviewModal currentDesignName="admin-dashboard" />
       <BarcodeScannerModal isOpen={isScannerOpen} onClose={() => setIsScannerOpen(false)} />
     </div>
   );

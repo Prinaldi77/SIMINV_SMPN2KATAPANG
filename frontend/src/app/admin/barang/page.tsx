@@ -18,7 +18,6 @@ import {
   Trash2,
 } from "lucide-react";
 import { apiFetch, getAuthUser } from "@/lib/api";
-import DesignPreviewModal from "@/components/DesignPreviewModal";
 import BarcodeScannerModal from "@/components/BarcodeScannerModal";
 
 interface KategoriOption {
@@ -699,7 +698,6 @@ export default function DataBarangPage() {
       )}
 
       {/* Floating Design Preview Button */}
-      <DesignPreviewModal currentDesignName="admin-barang" />
       <BarcodeScannerModal
         isOpen={isScannerOpen}
         onClose={() => setIsScannerOpen(false)}
